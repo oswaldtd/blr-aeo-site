@@ -17,7 +17,7 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="hero">
   <div class="container">
     <div class="hero-tag">For BLR · April 2026</div>
     <h1>Reclaim the voice.<br>Not just the<em> visibility.</em><br></h1>
@@ -57,7 +57,7 @@
 </section>
 
 <!-- THE SITUATION -->
-<section>
+<section id="signal">
   <div class="container">
     <p class="section-tag">The signal</p>
     <h2>The expertise is real.<br>The machines<br><em>can't read it.</em></h2>
@@ -84,7 +84,7 @@
 </section>
 
 <!-- REVENUE SHIELD -->
-<section>
+<section id="build">
   <div class="container">
     <p class="section-tag">What gets built</p>
     <h2>From HTML pages<br>to a<em> knowledge graph.</em></h2>
@@ -167,7 +167,7 @@
 </section>
 
 <!--DEPENDENCIES-->
-<section>
+<section id="dependencies">
   <div class="container">
     <p class="section-tag">Dependencies</p>
     <h2>Deployment Requirements and <br><em>Access Considerations</em></h2>
@@ -176,7 +176,7 @@
 </section>
 
 <!-- MEASUREMENT -->
-<section>
+<section id="measurement">
   <div class="container">
     <p class="section-tag">How we know it's working</p>
     <h2>Three numbers<br><em>measured monthly.</em></h2>
@@ -203,7 +203,7 @@
 </section>
 
 <!-- CTA -->
-<section class="cta-section">
+<section class="cta-section" id="cta">
   <div class="container">
     <p class="section-tag">Ready when you are</p>
     <h2>AI visibility by<br><em>by Week 2.</em></h2>
@@ -221,6 +221,43 @@
   </div>
 </footer>
 
+<nav id="sidenav" aria-label="Page sections">
+  <ul>
+    <li><a href="#hero" data-label="Overview"><span class="sidenav-dot"></span></a></li>
+    <li><a href="#signal" data-label="The signal"><span class="sidenav-dot"></span></a></li>
+    <li><a href="#build" data-label="What gets built"><span class="sidenav-dot"></span></a></li>
+    <li><a href="#engage" data-label="The engagement"><span class="sidenav-dot"></span></a></li>
+    <li><a href="#dependencies" data-label="Dependencies"><span class="sidenav-dot"></span></a></li>
+    <li><a href="#measurement" data-label="Measurement"><span class="sidenav-dot"></span></a></li>
+    <li><a href="#cta" data-label="Ready"><span class="sidenav-dot"></span></a></li>
+  </ul>
+</nav>
+
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/script.js"></script>
+<script>
+(function () {
+  var sections = document.querySelectorAll('section[id]');
+  var links = document.querySelectorAll('#sidenav a');
+  var sidenav = document.getElementById('sidenav');
+  var hero = document.getElementById('hero');
+
+  var heroObs = new IntersectionObserver(function(entries) {
+    sidenav.classList.toggle('visible', !entries[0].isIntersecting);
+  }, { threshold: 0.1 });
+  heroObs.observe(hero);
+
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        links.forEach(function(l) { l.classList.remove('active'); });
+        var active = document.querySelector('#sidenav a[href="#' + entry.target.id + '"]');
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+
+  sections.forEach(function(s) { obs.observe(s); });
+})();
+</script>
 </body>
 </html>
