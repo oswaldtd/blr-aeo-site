@@ -22,7 +22,7 @@
     <div class="hero-tag">For BLR · April 2026</div>
     <h1>Reclaim the voice.<br>Not just the<em> visibility.</em><br></h1>
     <p>BLR has built the most trusted compliance library in the industry over 50 years. Today, AI engines cannot reliably find or cite that content because it is not structured for machine extraction.</p>
-    <p>This engagement creates a schema architecture layer that converts existing content into machine-readable units — including JSON-LD fields carrying substantive regulatory claims, attorney attribution, and product-query signals.</p>
+    <p>This engagement creates a schema architecture layer that converts existing content into machine-readable units, including JSON-LD fields carrying substantive regulatory claims, author attribution, and product-query signals.</p>
     <p>The objective is to increase qualified discovery from AI platforms and drive more SQLs by ensuring BLR is consistently cited in high-intent compliance queries.</p>
     <div class="hero-meta">
       <!--<span>
@@ -60,7 +60,7 @@
 <section id="signal">
   <div class="container">
     <p class="section-tag">The signal</p>
-    <h2>The expertise is real.<br>The machines<br><em>can't read it.</em></h2>
+    <h2>The expertise is real.<br>The machines <em>can't read it.</em></h2>
     <p>BLR performs strongly in Google AI Overviews, but shows up far less often in ChatGPT. Same attorneys, same library, same 50 years. Google had two decades to learn what blr.com is. LLM crawlers arrived and found a site that tells them nothing about itself.</p>
     <p>This is because LLMs don't just "read" your pages; they attempt to map your authority. There is no schema markup anywhere on blr.com. No organization identity on the homepage. No connection between HR Hero and EHS Hero. No distinction between a legal analysis and a product demo. No relationship between an attorney and the content they wrote. The data is in the CMS. None of it is in the markup. BLR answers every question a machine would ask, who you are, what you cover, and who writes it, but only in ways humans can read.</p>
     <div class="pull">
@@ -98,17 +98,17 @@
       <div class="build-card">
         <p class="build-num">02</p>
         <p class="build-label">Content substance</p>
-        <p class="build-desc">648 resources classified into three authority tiers. Attorney-tagged content enriched with <em>abstract</em>, <em>about</em>, and <em>mentions</em> fields — the substantive regulatory claims LLMs extract and cite verbatim.</p>
+        <p class="build-desc">648 resources wired across four content branches: in-house editor authored, external firm reprint, BLR staff authored, and unbylined. Each branch gets the correct schema type, author attribution model, and copyright declaration. Bylined posts are enriched with <em>abstract</em>, <em>about</em>, and <em>mentions</em> fields carrying the regulatory claims LLMs extract and cite verbatim.</p>
       </div>
       <div class="build-card">
         <p class="build-num">03</p>
-        <p class="build-label">Attorney graph</p>
-        <p class="build-desc">65 named attorneys connected to credentials, firm affiliations, and the content they authored. The verification chain that produces <em>"according to [attorney name]"</em> citations instead of anonymous-page references.</p>
+        <p class="build-label">Author graph</p>
+        <p class="build-desc">Two author populations wired separately: 15 in-house BLR editors with credentials and BLR affiliation, and the external firm attorneys behind reprint content (Jackson Lewis and others) with firm affiliation, firm-bio <em>sameAs</em>, and correct <em>copyrightHolder</em> attribution. Named citations instead of anonymous-page references.</p>
       </div>
       <div class="build-card">
         <p class="build-num">04</p>
         <p class="build-label">Commercial visibility</p>
-        <p class="build-desc">49 webinars unlocked as citable assets via transcripts. Full marketing-grade schema on HR Hero and EHS Hero product pages — catches <em>"best HR compliance software"</em> queries. The pipeline-relevant layer.</p>
+        <p class="build-desc">49 webinars unlocked as citable assets via transcripts. Full marketing-grade schema on HR Hero and EHS Hero product pages to catch <em>"best HR compliance software"</em> queries. The pipeline-relevant layer.</p>
       </div>
     </div>
   </div>  
@@ -126,7 +126,7 @@
 
       <div class="months">
         <div class="month">
-          <div class="month-label">P0 — Root Identity · Weeks 1–4</div>
+          <div class="month-label">P0: Root Identity · Weeks 1-4</div>
           <div class="month-title">BLR exists as a named entity. Crawlers have an unlocked front door.</div>
           <ul class="month-items">
             <li>Organization + WebSite schema deployed globally</li>
@@ -137,26 +137,26 @@
           </ul>
         </div>
         <div class="month">
-          <div class="month-label">P1 — Content Wiring · Weeks 5–10</div>
-          <div class="month-title">648 posts classified. Attorney graph live. Webinars citable. Product pages discoverable.</div>
+          <div class="month-label">P1: Content Wiring · Weeks 5-10</div>
+          <div class="month-title">648 posts classified. Author graphs live. Webinars citable. Product pages discoverable.</div>
           <ul class="month-items">
-            <li>Conditional schema switch across 648 resource posts, 10 content types, three authority tiers</li>
-            <li>Attorney Person graph: credentials, firm affiliation, <code>sameAs</code> verification for 65 named attorneys</li>
-            <li>Rich <em>Article</em> enrichment — <code>abstract</code>, <code>about</code>, <code>mentions</code>, <code>articleBody</code> for ~188 attorney-tagged posts</li>
-            <li><em>VideoObject</em> schema with transcripts for 49 webinars — unlocks an entire content class as citable</li>
+            <li>Conditional schema switch across 648 resource posts, 10 content types, four content branches</li>
+            <li>In-house editor Person graph: 15 BLR editors on <code>/experts/</code> with credentials, <code>sameAs</code>, and BLR affiliation</li>
+            <li>External contributor Person graph: outside firm attorneys (Jackson Lewis and others) with firm affiliation, firm-bio <code>sameAs</code>, and correct <em>copyrightHolder</em> attribution on reprint content</li>
+            <li>Rich <em>Article</em> enrichment: <code>abstract</code>, <code>about</code>, <code>mentions</code>, and <code>articleBody</code> fields for bylined posts across both author populations</li>
+            <li><em>VideoObject</em> schema with transcripts for 49 webinars, unlocking an entire content class as citable</li>
             <li>Full marketing-grade <em>SoftwareApplication</em> schema on HR Hero and EHS Hero product pages</li>
-            <li>Staff editor profile inventory on <code>/experts/</code> + Branch B Person schema</li>
-            <li>Every block validated against Google Rich Results and Schema.org — zero errors, zero warnings</li>
+            <li>Every block validated against Google Rich Results and Schema.org, zero errors, zero warnings</li>
           </ul>
         </div>
         <div class="month">
-          <div class="month-label">P2 — Measurement · Weeks 11–12</div>
+          <div class="month-label">P2: Measurement · Weeks 11-12</div>
           <div class="month-title">Measured lift. Named-attorney citations. Final report.</div>
           <ul class="month-items">
             <li>Five-metric read vs. baseline: velocity, connectivity, attribution, citation diversity, competitive share</li>
-            <li>Named-attorney citation showcase — ChatGPT, Perplexity, Bing examples</li>
+            <li>Named-attorney citation showcase: ChatGPT, Perplexity, Bing examples</li>
             <li>GA4 segment: LLM-referred traffic, demo form starts, HR Hero and EHS Hero trial starts</li>
-            <li>Final engagement report for BLR leadership — what shipped, what moved, what's next</li>
+            <li>Final engagement report for BLR leadership: what shipped, what moved, what's next</li>
             <li>Monthly measurement handoff for BLR's internal team</li>
           </ul>
         </div>
@@ -184,7 +184,7 @@
   <div class="container">
     <p class="section-tag">How we know it's working</p>
     <h2>Four numbers<br><em>measured weekly.</em></h2>
-    <p>No vanity metrics. Four metrics — measured weekly, not monthly — across a 12-week engagement produces 12 data points instead of 2. That's a trend line, not a before/after. Plus a GA4 pipeline segment tying LLM-referred traffic to HR Hero and EHS Hero demo starts.</p>
+    <p>No vanity metrics. Four metrics measured weekly, not monthly, across a 12-week engagement produces 12 data points instead of 2. That's a trend line, not a before/after. Plus a GA4 pipeline segment tying LLM-referred traffic to HR Hero and EHS Hero demo starts.</p>
 
     <div class="measure-grid">
       <div class="measure-card">
@@ -194,8 +194,8 @@
       </div>
       <div class="measure-card">
         <div class="measure-metric">Connectivity</div>
-        <div class="measure-label">Attorney-to-content graph coverage</div>
-        <p class="measure-desc">Percentage of attorney-tagged posts with declared Person schema author. Baseline: 0%. Target: 100% of 188 attorney-tagged posts within 60 days of P1.</p>
+        <div class="measure-label">Author-to-content graph coverage</div>
+        <p class="measure-desc">Percentage of bylined posts with a declared Person schema author, across in-house editors and external firm contributors. Baseline: 0%. Target: 100% of bylined posts within 60 days of P1.</p>
       </div>
       <div class="measure-card">
         <div class="measure-metric">Attribution</div>
@@ -205,7 +205,7 @@
       <div class="measure-card">
         <div class="measure-metric">Competitive share</div>
         <div class="measure-label">BLR vs. SHRM, HR Dive, Ogletree</div>
-        <p class="measure-desc">Same 20 queries executed against the citation share of BLR's reference competitors. The delta metric — <em>"BLR closed the gap"</em> is the pitch's anchor datapoint.</p>
+        <p class="measure-desc">Same 20 queries executed against the citation share of BLR's reference competitors. The delta metric: <em>"BLR closed the gap"</em> is the pitch's anchor datapoint.</p>
       </div>
     </div>
   </div>
